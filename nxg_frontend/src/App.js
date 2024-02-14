@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Link, Route, Routes } from "react-router-dom";
 import  Home from './Home';
-import  ContactUs  from './ContanctUs';
+import  ContactUs  from './ContactUs';
 
 function App() {
   return (
