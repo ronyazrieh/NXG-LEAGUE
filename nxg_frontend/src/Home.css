@@ -1,1 +1,81 @@
-@import "./App.css"
+/* Home.css */
+
+.home-header {
+  background-color: #CDFF03;
+  color: white;
+  position: relative;
+}
+
+.hero-section {
+  position: relative;
+  height: 1000px;
+}
+
+.triangles {
+  position: absolute; /* Change to relative */
+  right: 60vh;
+  bottom: 25vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 35%;
+  left: 35vw;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  /* background-color: black; */
+  z-index: 2; /* Ensure overlay is on top of the triangles */
+}
+.overlay h1{
+  font-size: 93px;
+  margin-bottom: 10px;
+}
+.overlay p{
+  width:70%;
+  font-size: 36px ;
+  line-height:2em;
+}
+
+.overlay button {
+  background-color: #CDFF03;
+  border: none;
+  color: #101010;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.overlay button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.overlay button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.overlay button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.overlay button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+#subbar {
+  position: relative;
+}
