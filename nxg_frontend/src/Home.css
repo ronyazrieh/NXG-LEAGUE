@@ -1,29 +1,37 @@
 /* Home.css */
 
-.home-header {
+.home {
   background-color: #CDFF03;
   color: white;
   position: relative;
+  margin: 0;
+}
+
+.home-header{
+  height: 100vh;
 }
 
 .hero-section {
   position: relative;
-  height: 1000px;
+  margin:0;
+  padding:0;
+  height: 85vh;
 }
 
 .triangles {
   position: absolute; /* Change to relative */
   right: 60vh;
-  bottom: 25vh;
+  bottom: .005vh;
+  height:1340px;
 }
 
 .overlay {
   position: absolute;
-  top: 35%;
-  left: 35vw;
+  top: 65%;
+  left: 34vw;
   transform: translate(-50%, -50%);
   text-align: left;
-  /* background-color: black; */
+  /* background-color: black;*/
   z-index: 2; /* Ensure overlay is on top of the triangles */
 }
 .overlay h1{
@@ -31,7 +39,7 @@
   margin-bottom: 10px;
 }
 .overlay p{
-  width:70%;
+  width:60%;
   font-size: 36px ;
   line-height:2em;
 }
@@ -77,5 +85,15 @@
 }
 
 #subbar {
-  position: relative;
+  /* position: relative; */
+  background-color: #101010;
+  margin:0;
+  padding: 0;
+  height: 25vh;
+  bottom: 10%;
+}
+
+.home-info{
+  background-color: #24261F;
+  height: 100vh;
 }
