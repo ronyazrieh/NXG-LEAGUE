@@ -7,6 +7,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .home{
+    background-color: #24261F;
+  }
+}
+
 .home-header{
   height: 100vh;
 }
@@ -19,28 +25,29 @@
 }
 
 .triangles {
-  position: absolute; /* Change to relative */
+  position: absolute;
   right: 60vh;
   bottom: .005vh;
-  height:1340px;
+  height:1356px;
 }
 
 .overlay {
   position: absolute;
-  top: 65%;
-  left: 34vw;
+  top: 62%;
+  left: 35vw;
   transform: translate(-50%, -50%);
   text-align: left;
   /* background-color: black;*/
   z-index: 2; /* Ensure overlay is on top of the triangles */
 }
 .overlay h1{
-  font-size: 93px;
+  font-size: 96px;
   margin-bottom: 10px;
 }
 .overlay p{
   width:60%;
-  font-size: 36px ;
+  margin-top: 10px;
+  font-size: 36px;
   line-height:2em;
 }
 
@@ -56,6 +63,31 @@
   transition: all 0.5s;
   cursor: pointer;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+@media screen and (max-width: 1200px) {
+  .overlay {
+    top: 40%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .overlay h1 {
+    font-size: 36px;
+  }
+
+  .overlay p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+
+  .overlay button {
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+  }
 }
 
 .overlay button{
@@ -84,16 +116,158 @@
   right: 10px;
 }
 
-#subbar {
-  /* position: relative; */
+.subbar {
   background-color: #101010;
-  margin:0;
-  padding: 0;
-  height: 25vh;
-  bottom: 10%;
+  height: 15vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .subbar {
+    flex-direction: column;
+  }
+}
+
+.subbar-left{
+  height:100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CDFF03;
+}
+
+.subbar-left h1{
+  color: #101010;
+  font-size: 52px;
+  margin: auto;
+}
+
+.subbar-right{
+  position: relative;
+  flex: 2;
+  height: auto;
+  background-color: #101010;
+  margin: auto;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subbar-right button{
+  background-color: #101010;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 260px;
+  transition: all 0.4s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgb(0, 0, 0);
+}
+
+.subbar-right button:hover{
+  background-color: #CDFF03;
+  color: #101010;
 }
 
 .home-info{
   background-color: #24261F;
-  height: 100vh;
+  height: 150vh;
+  display: flexbox;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1200px) {
+  .row {
+    flex-direction: column;
+    }
+}
+
+
+.info{
+  background-color: #24261F;
+  height: 75vh;
+  padding: 2%;
+}
+
+.info h2{
+  color: black;
+  background-color: white;
+  padding: 1%;
+  display: inline-block;
+}
+
+.info h1{
+  color: #CDFF03;
+  margin: 0;
+  font-size: 50px;
+  margin: auto;
+
+  display: inline-block;
+}
+
+.info p{
+  color: white;
+  font-size: 21px;
+  line-height:1.5em;
+}
+
+.block-1{
+  flex: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1476' height='1912.664' viewBox='0 0 1476 1912.664'%3E%3Cpath id='Path_7' data-name='Path 7' d='M1203,0l709.664,925.671L0,1476Z' transform='translate(-1210 -400) ' fill='%23161714'/%3E%3C/svg%3E%0A");
+  order: 1;
+}
+ 
+.block-2{ 
+  flex: 1;
+  order: 2;
+}   
+
+.block-3{
+  flex: 1;
+  order: 3;
+}
+
+.block-4{
+  flex: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1476' height='1912.664' viewBox='0 0 1476 1912.664'%3E%3Cpath id='Path_7' data-name='Path 7' d='M1203,0l709.664,925.671L0,1476Z' transform='translate(30 1912.664) rotate(-90)' fill='%23cdff03'/%3E%3C/svg%3E%0A");
+  order: 4;
+}
+
+.square {
+  height: 75vh;
+  width: 40vw;
+  background-color: #55555583;
+}
+
+@media screen and (max-width: 1200px) {
+  .block-3{ 
+    order: 4;
+  } 
+  .block-4{ 
+    order: 3;
+  } 
+
+  .square {
+    width: 95vw;
+    background-color: #55555583;
+  }
+
 }

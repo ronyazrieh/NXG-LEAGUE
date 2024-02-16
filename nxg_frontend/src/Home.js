@@ -31,14 +31,56 @@ function Home() {
                         <button>Join Our League</button>
                     </div>
                 </div>
-                <div id="subbar">
-                    <p>subbar</p>
+
+                <div className="subbar">
+
+                    <div className="subbar-left">
+                        <h1>Divisions</h1>
+                
+                    </div>
+
+                    <div className="subbar-right">
+                        <button>DIV A</button>
+                        <button>DIV B</button>
+                        <button>COMING SOON</button>
+                    </div>
                 </div>
             </div>
 
             <div className="home-info">
+                <div className="row">
 
+                    <div className="info block-1"><div class="square"></div></div>
+
+                    <div className="info block-2">
+                        <h2>About the League</h2> <br />
+                        <h1>Explore Our Mission</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim, eros nec elementum facilisis, nibh purus ornare libero, nec bibendum lorem enim eget velit. Sed a mi justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a purus non purus porttitor rutrum. Etiam in suscipit erat. </p>
+                        <ul>
+                            <p>- Suspendisse egestas arcu non ultricies dictum</p>
+                            <p>- Phasellus pharetra diam accumsan erat  </p>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a purus non purus porttitor rutrum. Etiam in suscipit erat. Suspendisse egestas arcu non ultricies dictum.</p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="info block-3">
+                    <h2>News and Announcements</h2> <br />
+                        <h1>Get the Latest Scoop</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim, eros nec elementum facilisis, nibh purus ornare libero, nec bibendum lorem enim eget velit. Sed a mi justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a purus non purus porttitor rutrum. Etiam in suscipit erat. </p>
+                        <ul>
+                            <p>- Suspendisse egestas arcu non ultricies dictum</p>
+                            <p>- Phasellus pharetra diam accumsan erat  </p>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a purus non purus porttitor rutrum. Etiam in suscipit erat. Suspendisse egestas arcu non ultricies dictum.</p>
+                    </div>
+                        <div className="info block-4"><div class="square"></div></div>
+                </div>
             </div>
+            <div className="social-media-bar">
+                
+            </div>
+
 
         </div>
 
