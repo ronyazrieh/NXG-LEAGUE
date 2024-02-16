@@ -11,7 +11,7 @@
     display: inline-flex;
     justify-content: space-evenly;
     background-color: #101010;
-    filter:drop-shadow(16px 16px 20px black);
+    filter:drop-shadow(8px 8px 10px black);
     width: 100vw;
 }
 
