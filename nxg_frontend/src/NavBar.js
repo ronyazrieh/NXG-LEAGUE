@@ -14,6 +14,7 @@ function NavBar(){
                         <li><Link to="/ContactUs" className="links">Contact Us</Link></li>
                     </ul>
 
+        
                     <img src={SUI} id="logo"/>
 
                     <ul className="nav-row">
