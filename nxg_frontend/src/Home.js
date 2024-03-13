@@ -1,4 +1,5 @@
 import React from "react";
+import SocialMedia from './SocialMedia';
 import './Home.css';
 
 function Home() {
@@ -77,8 +78,11 @@ function Home() {
                         <div className="info block-4"><div class="square"></div></div>
                 </div>
             </div>
+            <div className="gap"></div>
             <div className="social-media-bar">
-                
+                <SocialMedia platform="Tiktok" />
+                <SocialMedia platform="Twitter" />
+                <SocialMedia platform="Instagram" />
             </div>
 
 

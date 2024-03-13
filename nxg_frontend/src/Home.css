@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 1200px) {
   .home{
-    background-color: #24261F;
+    /* background-color: #24261F; */
   }
 }
 
@@ -67,26 +67,30 @@
 
 @media screen and (max-width: 1200px) {
   .overlay {
-    top: 40%;
+    top: 80%;
     width: 80%;
-    left: 50%;
+    left: 42.5%;
     transform: translate(-50%, -50%);
   }
 
   .overlay h1 {
-    font-size: 36px;
+    font-size: 300%;
   }
 
   .overlay p {
-    width: 100%;
+    width: 50%;
     font-size: 16px;
     line-height: 1.3em;
+    margin-bottom: 5%;
   }
 
   .overlay button {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
-    width: 150px;
+    width: 30%;
+  }
+  .triangles{
+    right: 0%;
   }
 }
 
@@ -162,7 +166,7 @@
 
 .subbar-right button{
   background-color: #101010;
-  border: none;
+  border-color: #CDFF03;
   color: white;
   text-align: center;
   font-size: 24px;
@@ -182,12 +186,19 @@
 }
 
 .home-info{
+  position: relative;
   background-color: #24261F;
-  height: 150vh;
-  display: flexbox;
+  min-height: 150vh;
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex-flow: column;
+}
+
+@media screen and (max-width: 1200px) {
+  .subbar-right {
+    
+  }
 }
 
 .row{
@@ -271,3 +282,20 @@
   }
 
 }
+
+.social-media-bar{
+  position: relative;
+  background-color: #101010;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-bar img{
+  height: 50%;
+  margin-inline: 10vw;
+  justify-self: center;
+  margin-block: 2%;
+}
+
+
