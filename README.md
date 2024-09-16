@@ -8,7 +8,10 @@ The use of React in this web-application was to take advantage of the “functio
 
 NXG League will allow users to sign up for a team, and view their team stats amongst other team and players. This project was built from the ground up by me, which includes the graphic design process. Adobe XD was used to create the high-fidelity mockup.
 
+### Current Application Status
+![Curerent Application Status](readmeimg.png)  
 
+![Current Application Status](readmegif.gif)
 
 
 ## What next
